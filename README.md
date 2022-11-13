@@ -4,7 +4,7 @@
 
 Для коррекного использования программы входные данные должны быть записани в ковычки, пример: "hello world". На вход подается текст, программа находит в нем различные идентификаторы из цифр и букв, начинающиеся на букву и выводит их количество, разделитеями являются все другие символы. *Если строка "1a2" идентификатором будет a2.
 ### Код на C (с отдельной функцией и использованием регистров)
-###  [avs25.c](https://github.com/Fedosz/AVS2/blob/main/avs25.c)
+###  [avs25.c](https://github.com/Fedosz/AVS25/blob/main/avs25.c)
 
 ```c
 #include <stdio.h>
@@ -160,12 +160,13 @@ int main(int argc, char *argv[]) {
 ```
 
 ### Компиляция программы без оптимизации
-
+###  [avs25.s](https://github.com/Fedosz/AVS25/blob/main/avs25.s)
 ```sh
 gcc -O0 -Wall -masm=intel -S avs25.c -o avs25.s
 ```
 
 ### Компиляция программы с оптимизацией  
+###  [avs25_opt.s](https://github.com/Fedosz/AVS25/blob/main/avs25_opt.s)
 ```sh
 gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none avs25.c -o avs25_opt.s
 ```
