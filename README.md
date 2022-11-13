@@ -181,4 +181,4 @@ gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=non
 | "key,./,12,kye .key" | "key - 2 \n kye - 1" | "key - 2 \n kye - 1" |
 
 ### Код на ассемблере с подписанными переменными (сразу по ссылке, т.к. там 600+ строк)
-###  [avs25_opt.s](https://github.com/Fedosz/AVS2/blob/main/avs25_opt.s)
+###  [avs25_opt.s](https://github.com/Fedosz/AVS25/blob/main/avs25_opt.s)
